@@ -23,8 +23,8 @@ default_values = {'AUTO_DELETE_MESSAGE_DURATION': 30,
                   'BOT_PM': False,
                   'FORCE_BOT_PM': False,
                   'UPDATE_PACKAGES': 'False',
-                  'UPSTREAM_BRANCH': 'master',
-                  'UPSTREAM_REPO': 'https://github.com/Tamilupdates/weebzone-heromku',
+                  'UPSTREAM_BRANCH': 'update',
+                  'UPSTREAM_REPO': 'https://github.com/Tamilupdates/KPS-Weebzone',
                   'STATUS_UPDATE_INTERVAL': 2,
                   'DOWNLOAD_DIR': '/usr/src/app/downloads/',
                   'TIME_GAP': -1,
@@ -412,11 +412,11 @@ def load_config():
 
     UPSTREAM_REPO = environ.get('UPSTREAM_REPO', '')
     if len(UPSTREAM_REPO) == 0: 
-        UPSTREAM_REPO = 'https://github.com/Tamilupdates/weebzone-heromku'
+        UPSTREAM_REPO = 'https://github.com/Tamilupdates/KPS-Weebzone'
 
     UPSTREAM_BRANCH = environ.get('UPSTREAM_BRANCH', '')
     if len(UPSTREAM_BRANCH) == 0:   
-        UPSTREAM_BRANCH = 'master'
+        UPSTREAM_BRANCH = 'update'
 
     UPDATE_PACKAGES = environ.get('UPDATE_PACKAGES', '')
     if len(UPDATE_PACKAGES) == 0:
